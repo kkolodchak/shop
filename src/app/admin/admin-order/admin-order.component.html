@@ -1,0 +1,39 @@
+<table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">userName</th>
+            <th scope="col">userPhone</th>
+            <th scope="col">totalPayment</th>
+            <th scope="col">dateOrder</th>
+            <!-- <th scope="col">Status</th> -->
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let order of adminOrders; let i=index">
+            <td>{{ order.id }}</td>
+            <td>{{ order.userName }}</td>
+            <td>{{ order.userPhone }}</td>
+            <td>{{ order.totalPayment }}</td>
+            <td>{{ order.dateOreder | date }}</td>
+            <!-- <td>{{ order.statusOrder}}</td> -->
+            <td>
+              <input type="button" value="details" class="btn btn-info" (click)="openDetailsModal(detailsForm)">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ng-template #detailsForm>
+          <div class="modal-header">
+            <h4 class="modal-title pull-left">Modal</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              {{ product?.nameUA | titlecase }}
+              {{ product?.description }}
+            This is a modal.
+          </div>
+        </ng-template>

@@ -1,0 +1,66 @@
+<!-- <h1>Адмін</h1>
+
+<hr>
+<form class="form-inline">
+    <div class="form-group col-10">
+        <input type="search" class="form-control w-100" placeholder="search here..">
+    </div>
+    <div class="col-2">
+        <button type="button" class="btn btn-success btn-block" (click)="openModal(template)">Add Discount</button>
+    </div>
+</form>
+<hr>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Text</th>
+            <th scope="col">Image</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <thead>
+        <tr *ngFor="let d of adminDiscount; let i=index">
+            <td>{{ i+1 }}</td>
+            <td>{{ d.title }}</td>
+            <td>{{ d.text }}</td>
+            <td><img [src]="d.image" alt="" style="width: 60px; height: 60px;"></td>
+            <td>
+                <input type="button" value="edit" class="bth btn-warning" (click)="editDiscount(template, d)">
+            </td>
+            <td>
+                <input type="button" value="delete" class="bth btn-danger" (click)="deleteDiscount(d)">
+            </td>
+        </tr>
+    </thead>
+</table>
+
+<ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Modal</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <label for="dTitle">Title: </label>
+                <input [(ngModel)]="dTitle" name="dTitle" type="text" class="form-control" id="dTitle">
+            </div>
+            <div class="form-group">
+                <label for="dText">Text: </label>
+                <textarea [(ngModel)]="dText" name="dText" class="form-control" style="height: 200px;"
+                    id="dText"></textarea>
+            </div>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="dImage" required>
+                <label class="custom-file-label" for="dImage">Choose file...</label>
+            </div>
+            <button type="button" class="btn btn-success mt-3" (click)="addDiscount()" [textContent]="!editStatus ? 'Add' : 'Update'"></button>
+        </form>
+    </div>
+</ng-template> -->

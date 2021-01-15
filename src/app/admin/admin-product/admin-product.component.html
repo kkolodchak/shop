@@ -1,0 +1,126 @@
+<form>
+    <div class="form-group">
+        <label for="categoryChoose">Choose category</label>
+        <select [(ngModel)]="categoryName" name="categoryName" (change)="setCategory()" class="custom-select"
+            id="categoryChoose">
+            <option *ngFor="let category of categories">
+                {{ category.nameEN }}
+            </option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="nameEN">Name EN</label>
+        <input [(ngModel)]="productNameEN" name="productNameEN" type="text" id="nameEN" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="nameUA">Name UA</label>
+        <input [(ngModel)]="productNameUA" name="productNameUA" type="text" id="nameUA" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="description">Description (Опис)</label>
+        <textarea [(ngModel)]="productDescription" name="productDescription" class="form-control" id="description"
+            rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="season">Season (Сезон)</label>
+        <input [(ngModel)]="productSeason" name="productSeason" type="text" id="season" class="form-control">
+    </div>
+    <!-- <div class="form-group">
+        <label for="brand">Brand (Бренд)</label>
+        <input [(ngModel)]="productBrand" name="productBrand" type="text" id="brand" class="form-control">
+    </div> -->
+    <div class="form-group">
+        <label for="price">Price (Ціна за лот)</label>
+        <input [(ngModel)]="productPrice" name="productPrice" type="number" id="price" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="value">Value(кг./ед.)</label>
+        <select [(ngModel)]="productValue" name="productValue" type="text" id="value" class="form-control">
+            <option>ед.</option>
+            <option>кг.</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="oldprice">Oldprice (Закреслена ціна)</label>
+        <input [(ngModel)]="productOldprice" name="productOldprice" type="number" id="oldprice" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="selfcost">Selfcost (Цена единици:)</label>
+        <input [(ngModel)]="productSelfcost" name="productSelfcost" type="number" id="selfcost" class="form-control">
+    </div>
+    <div class="custom-file">
+        <!-- <div class="custom-file" *ngIf="!imageStatus"> -->
+        <input (change)="uploadFile($event)" type="file" class="custom-file-input" id="image" required>
+        <label class="custom-file-label" for="image">Choose file...</label>
+    </div>
+    <div class="progress mb-3 mt-3" *ngIf="!imageStatus">
+        <div [style.width]="(uploadProgress | async) + '%'" class="progress-bar progress-bar-striped bg-warning"
+            role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="productImage mb-3 mt-3" *ngIf="imageStatus">
+        <img [src]="productImage" alt="">
+        <span (click)="deleteImage(deleteImageConfirm)">
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                <path fill-rule="evenodd"
+                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+            </svg>
+        </span>
+    </div>
+    <button class="btn btn-success" (click)="addProduct()" [textContent]="editStatus ? 'save' : 'add'">Add</button>
+</form>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Category</th>
+            <th scope="col">Name EN</th>
+            <th scope="col">Name UA</th>
+            <th scope="col">Description</th>
+            <th scope="col">Season</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Price</th>
+            <th scope="col">кг/ед</th>
+            <th scope="col">Oldprice</th>
+            <th scope="col">Selfcost</th>
+            <th scope="col">Image</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let prod of adminProducts">
+            <td>{{ prod.id }}</td>
+            <td>{{ prod.category.nameUA }}</td>
+            <td>{{ prod.nameEN }}</td>
+            <td>{{ prod.nameUA }}</td>
+            <td>{{ prod.description | slice:0:50 }}</td>
+            <td>{{ prod.season }}</td>
+            <td>{{ prod.brand }}</td>
+            <td>{{ prod.price }}</td>
+            <td>{{ prod.value }}</td>
+            <td>{{ prod.oldprice }}</td>
+            <td>{{ prod.selfcost }}</td>
+            <td>
+                <img [src]="prod.image" style="width: 100px; height: 100px" alt="">
+            </td>
+            <td>
+                <input (click)="editProduct(prod)" type="button" value="edit" class="btn btn-warning">
+            </td>
+            <td>
+                <input (click)="deleteProduct(prod)" type="button" value="delete" class="btn btn-danger">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<ng-template #deleteImageConfirm>
+    <div class="modal-body text-center">
+        <p>Do you want to confirm?</p>
+        <button type="button" class="btn btn-default" (click)="confirmImage()">Yes</button>
+        <button type="button" class="btn btn-primary" (click)="declineImage()">No</button>
+    </div>
+</ng-template>

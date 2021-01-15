@@ -1,0 +1,31 @@
+<form>
+    <div class="form-group">
+        <label for="nameEN">Название EN</label>
+        <input [(ngModel)]="nameEN" name="nameEN" type="text" id="nameEN" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="nameUA">Название RS</label>
+        <input [(ngModel)]="nameUA" name="nameUA" type="text" id="nameUA" class="form-control">
+    </div>
+    <button class="btn btn-success mb-2" (click)="addCategory()">Добавить</button>
+</form>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Название (en)</th>
+        <th scope="col">Название (ros)</th>
+        <th scope="col">Удалить</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of adminCategory">
+          <td>{{ c.id }}</td>
+          <td>{{ c.nameEN }}</td>
+          <td>{{ c.nameUA }}</td>
+          <td>
+              <input type="button" value="Удалить" class="btn btn-danger" (click)="deleteCategory(c)">
+          </td>
+      </tr>
+    </tbody>
+  </table>

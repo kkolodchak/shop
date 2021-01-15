@@ -1,0 +1,89 @@
+<div class="section animateSection animated">
+    <div class="container hidden-xs hidde-sm">
+        <div class="row">
+            <div class="col-md-12 col-lg-l2">
+                <div class="emptySpace20"></div>
+                <ul class="breadcrumb smallSlideLeft">
+                    <li>
+                        <a [routerLink]="[ '/home' ]">
+                            <span>Главная</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            [routerLink]="[ '/menu', product?.category.nameEN ]"><span>{{ product?.category.nameUA | titlecase }}</span></a>
+                    </li>
+                    <li>
+                        <a><span class="breadcrumb-third-menu">{{ product?.nameUA | titlecase }}</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row ">
+            <div class="col-lg-12">
+                <div class="productDetailFlex">
+                    <div class="swiperMainWrapper mobileFluidSwiper buttonPosition-2">
+                        <div class="swiper-container swiper-swiper-unique-id-0 initialized swiper-container-horizontal">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide-active">
+                                    <div class="imgWrapper">
+                                        <img class="productDetail" style="width: 300px;" [src]="product?.image" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emptySpace-md45 emptySpace-xs20"></div>
+                    </div>
+                    <div class="productDetailContent">
+                        <div class="productOderDetail smallSlideLeft">
+                            <h1 class="h2 as title-name">{{ product?.nameUA | titlecase }}</h1>
+
+                            <div class="description-box">
+                                <div class="productBrand">
+                                    <p class="mr-2 font-w">Бренд:</p><span class="totalBrand"> {{ product?.brand }} </span>
+                                </div>
+                                <div class="line"></div>
+                                <div class="productSeason">
+                                    <p class="mr-2 font-w">Сезон:</p><span>{{ product?.season }}</span>
+                                </div>
+                                <div class="line"></div>
+                                <div class="productSelfcost">
+                                    <p class="mr-2 font-w">Цена единици:</p><span class="totalBrand">
+                                        {{ product?.selfcost }}<span class="euro-selfcost">€</span></span>
+                                </div>
+                                <div class="line"></div>
+                                <p class="descr">{{ product?.description }}</p>
+
+                            </div>
+                        </div>
+                        <div class="emptySpace30 emptySpace-xs25"></div>
+                        <div class="orderPrizeSection productOrder">
+                            <div class="orderDetailSection smallSlideLeft animationDelay-4">
+                                <p class="counterTitle mt-4">Количество лотов: </p>
+                                <!-- <div class="productCountWrapper">
+                                    <span class="productCount lessProduct"></span>
+                                    <input class="product-qty-single" type="text" maxlength="3" [value]="1">
+                                    <span class="productCount moreProduct"></span>
+                                </div> -->
+                                <app-counter [product]="product"></app-counter>
+                            </div>
+                            <div class="emptySpace30 emptySpace-xs25"></div>
+                            <div class="orderDetailSection smallSlideLeft animationDelay-5">
+                                <div class="productPrice">
+                                    <p>Цена за лот:</p>
+                                    <span class="productDetailPrice">{{ product?.price * product?.count }}</span><span>€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emptySpace25 emptySpace-xs5"></div>
+                        <div class="fadeInTop animationDelay-6">
+                            <div class="button bttn add-to-cart-product mt-2" (click)="addToBasket(product)">Заказать</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

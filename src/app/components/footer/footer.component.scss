@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap");
+
+.black-bg {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #171717;
+}
+
+.container {
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  color: #e9e9e9;
+}
+
+.about {
+  color: #e9e9e9;
+  min-width: 330px;
+  max-width: 330px;
+}
+
+.about-text {
+  text-align: justify;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16.9px;
+  letter-spacing: 0.1px;
+  margin-top: 33px;
+}
+
+@media (max-width: 1099px) {
+  .about-text {
+    max-width: 292px;
+  }
+}
+
+@media (min-width: 1099px) {
+  .about-text {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 850px) {
+  .about-text {
+    margin-right: 55px;
+  }
+}
+
+.middle-column {
+  margin-top: 10px;
+}
+
+.mid-h4 {
+  margin-top: -11px;
+}
+
+.uil {
+  color: #e9e9e9;
+  font-size: 19px;
+}
+
+.uil-clock-ten {
+  margin-top: -14px;
+}
+
+.phone {
+  display: flex;
+}
+
+.phone1 {
+  margin-top: 32px;
+}
+
+.num-phone {
+  padding-top: 3px;
+  font-weight: 100;
+  color: #e9e9e9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13.5px;
+  margin-left: 10px;
+}
+
+.timetable {
+  margin-top: 27px;
+  margin-left: 0px;
+}
+
+.timetable-text {
+  color: #e9e9e9;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+  font-size: 15.5px;
+  margin-top: -11px;
+}
+
+.forma {
+  margin-left: 75px;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bttn {
+  background-color: #e9e9e9;
+  color: #171717;
+  border-radius: 5.5px;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  padding: 8px 21px 10px 25px;
+  text-transform: uppercase;
+  font-size: 10.9px;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.forma-text {
+  margin-top: 5px;
+}
+
+.messag {
+  margin-bottom: 3px;
+}
+
+input[type="text"],
+input[type="tel"] {
+  font-size: 13.3px;
+}
+
+.location {
+  margin-top: -25px;
+  display: flex;
+  align-items: center;
+}
+
+.text-location {
+  color: rgba(255, 255, 255, 0.932);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 8px;
+}
+
+.third-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+}
+
+.title-h4 {
+  margin-top: -2px;
+}
+
+.img-np {
+  width: 181px;
+  margin-top: 16px;
+}
+
+.privan-bank {
+}
+
+.img-pb {
+  margin-top: 33px;
+  width: 190px;
+  margin-bottom: 19px;
+}
+
+.line1 {
+  width: 197px;
+  height: 1.1px;
+  background-color: #d7d7d7;
+}
+
+.line2 {
+  width: 218px;
+  height: 1.1px;
+  background-color: #d7d7d7;
+}
+
+.line3 {
+  width: 218px;
+  height: 1.1px;
+  background-color: #d7d7d7;
+}
+
+@media (min-width: 850px) {
+  .third-section {
+    margin-left: 55px;
+  }
+}
+
+@media screen and (max-width: 807px) {
+  .about {
+    display: none;
+  }
+  .img-pb {
+    width: 164px;
+    margin-left: 4px;
+  }
+  .img-np {
+    width: 158px;
+    margin-top: 9px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .black-bg {
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-h4 {
+    margin-top: 17px;
+    margin-left: -13px;
+  }
+  .line3 {
+    margin-left: -15px;
+  }
+}

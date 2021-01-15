@@ -1,0 +1,32 @@
+<form>
+    <div class="form-group">
+        <label for="nameEN">Название EN</label>
+        <input [(ngModel)]="nameEN" name="nameEN" type="text" id="nameEN" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="nameUA">Название</label>
+        <input [(ngModel)]="nameUA" name="nameUA" type="text" id="nameUA" class="form-control">
+    </div>
+    <button class="btn btn-success mb-2" (click)="addBrands()">Добавить</button>
+</form>
+
+<table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Название (en)</th>
+            <th scope="col">Название (ros)</th>
+            <th scope="col">Удалить</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let br of adminBrands">
+              <td>{{ br.id }}</td>
+              <td>{{ br.nameEN }}</td>
+              <td>{{ br.nameUA }}</td>
+              <td>
+                  <input type="button" value="Удалить" class="btn btn-danger" (click)="deleteBrands(br)">
+              </td>
+          </tr>
+        </tbody>
+      </table>

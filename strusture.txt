@@ -1,0 +1,26 @@
+app/
+    components/
+        haeder
+        footer
+    pages/
+        home
+        discount 
+        female
+        male
+        children
+        accessories
+        expected
+        basket
+    shared/
+       interfaces/
+       models/
+       pipes/
+       services/
+       directives/
+       guards/
+    admin/
+       admin-category
+       admin-product
+       admin-order
+       admin-discount
+

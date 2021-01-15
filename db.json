@@ -1,0 +1,427 @@
+{
+  "categories": [
+    {
+      "nameEN": "discount",
+      "nameUA": "акции",
+      "id": 1
+    },
+    {
+      "nameEN": "female",
+      "nameUA": "женщины",
+      "id": 2
+    },
+    {
+      "nameEN": "male",
+      "nameUA": "мужчины",
+      "id": 3
+    },
+    {
+      "nameEN": "children",
+      "nameUA": "дети",
+      "id": 4
+    },
+    {
+      "nameEN": "accessories",
+      "nameUA": "аксессуары",
+      "id": 5
+    },
+    {
+      "nameEN": "expected",
+      "nameUA": "ожидается",
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "category": {
+        "nameEN": "female",
+        "nameUA": "женщины",
+        "id": 2
+      },
+      "nameEN": "shoes",
+      "nameUA": "Туфли",
+      "description": "PETALO PUMP 120 mm",
+      "season": "все",
+      "brand": "Le silla",
+      "price": 200,
+      "value": "кг.",
+      "selfcost": 200,
+      "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2F7069705e-93f9-4384-87ef-818ae633f5cd.jpeg?alt=media&token=f4e57532-1aac-459d-b4d4-83cc8ce717f9",
+      "count": 1,
+      "id": 1
+    },
+    {
+      "category": {
+        "nameEN": "male",
+        "nameUA": "мужчины",
+        "id": 3
+      },
+      "nameEN": "shirt",
+      "nameUA": "Рубашка",
+      "description": "лот 10 шт, розмір S-XXL",
+      "season": "весна-лето",
+      "brand": "MK",
+      "price": 300,
+      "value": "кг.",
+      "oldprice": 500,
+      "selfcost": 30,
+      "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2F%D1%87%D0%BE%D0%BB.jpeg?alt=media&token=ee36fc05-7d9e-4d86-95dd-5d807a4bb877",
+      "count": 1,
+      "id": 2
+    },
+    {
+      "category": {
+        "nameEN": "children",
+        "nameUA": "дети",
+        "id": 4
+      },
+      "nameEN": "shirt",
+      "nameUA": "Рубашка",
+      "description": "лот 10 шт, розмір S-XXL",
+      "season": "весна-лето",
+      "brand": "Karl",
+      "price": 299,
+      "value": "ед.",
+      "oldprice": 200,
+      "selfcost": 19,
+      "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2F%D0%B4%D1%96%D1%82%D0%B8.jpeg?alt=media&token=767a344f-79f2-47dc-a623-56bb673ee35c",
+      "count": 1,
+      "id": 3
+    },
+    {
+      "category": {
+        "nameEN": "accessories",
+        "nameUA": "аксессуары",
+        "id": 5
+      },
+      "nameEN": "shirt",
+      "nameUA": "Рубашка",
+      "description": "лот 10 шт, розмір S-XXL",
+      "season": "summer",
+      "brand": "MK",
+      "price": 599,
+      "value": "ед.",
+      "oldprice": null,
+      "selfcost": 40,
+      "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2Faccess.png?alt=media&token=48882055-5d33-4bf3-949e-1b312e738999",
+      "count": 1,
+      "id": 4
+    },
+    {
+      "id": 5,
+      "category": {
+        "nameEN": "discount",
+        "nameUA": "акции",
+        "id": 1
+      },
+      "nameEN": "shirt",
+      "nameUA": "Рубашка",
+      "description": "лот 10 шт, розмір S-XXL",
+      "season": "summer",
+      "brand": "MK",
+      "price": 380,
+      "value": "кг.",
+      "oldprice": 500,
+      "selfcost": 57,
+      "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2Fmmm.jpeg?alt=media&token=81cd8dab-b5d6-42e9-9a76-3af0277ae292",
+      "count": 1
+    },
+    {
+      "category": {
+        "nameEN": "discount",
+        "nameUA": "акции",
+        "id": 1
+      },
+      "nameEN": "shirt",
+      "nameUA": "Рубашка",
+      "description": "лот 10 шт, розмір S-XXL",
+      "season": "весна",
+      "brand": "Karl",
+      "price": 499,
+      "value": "кг.",
+      "oldprice": 800,
+      "selfcost": 50,
+      "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2F%D0%B1%D0%BB%D1%83%D0%B7%D0%B0%D1%80.jpeg?alt=media&token=25b95f7c-38bd-4c44-aea8-2d6766aa601e",
+      "count": 1,
+      "id": 6
+    },
+    {
+      "id": 7,
+      "category": {
+        "nameEN": "expected",
+        "nameUA": "ожидается",
+        "id": 6
+      },
+      "nameEN": "shirt",
+      "nameUA": "Рубашка",
+      "description": "лот 10 шт, розмір S-XXL",
+      "season": "summer",
+      "brand": "MK",
+      "price": 300,
+      "value": "кг.",
+      "oldprice": 488,
+      "selfcost": 25,
+      "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2F%D0%B1%D0%BB%D1%83%D0%B7%D0%B0.jpeg?alt=media&token=0ffa2c1e-96bb-493d-8836-6d36f4533a07",
+      "count": 1
+    },
+    {
+      "category": {
+        "nameEN": "male",
+        "nameUA": "мужчины",
+        "id": 3
+      },
+      "nameEN": "sdfdsfdsfs",
+      "nameUA": "fdsfdsfds",
+      "description": "fdsfdsfds",
+      "season": "весна",
+      "brand": "MK",
+      "price": 111,
+      "value": "кг.",
+      "oldprice": 155,
+      "selfcost": 123,
+      "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2F12058529_black_001_productlarge.jpeg?alt=media&token=73428977-4395-40dc-86a7-d18dc698e035",
+      "count": 1,
+      "id": 8
+    }
+  ],
+  "brands": [
+    {
+      "nameEN": "MarkoPolo",
+      "nameUA": "MarkoPolo",
+      "id": 1
+    }
+  ],
+  "orders": [
+    {
+      "userName": "Kris",
+      "userSecondName": "Lolhy",
+      "userCity": "Львів",
+      "userRegion": "Львівська область",
+      "userPhone": "+380930552716",
+      "userEmail": "hrustyn99@gmail.com",
+      "userComment": "",
+      "totalPayment": 300,
+      "productOrder": [
+        {
+          "category": {
+            "nameEN": "male",
+            "nameUA": "мужчины",
+            "id": 3
+          },
+          "nameEN": "shirt",
+          "nameUA": "Рубашка",
+          "description": "лот 10 шт, розмір S-XXL",
+          "season": "весна-лето",
+          "brand": "MK",
+          "price": 300,
+          "value": "кг.",
+          "oldprice": 500,
+          "selfcost": 30,
+          "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2F%D1%87%D0%BE%D0%BB.jpeg?alt=media&token=ee36fc05-7d9e-4d86-95dd-5d807a4bb877",
+          "count": 1,
+          "id": 2
+        }
+      ],
+      "dateOreder": "2020-09-22T13:19:12.150Z",
+      "statusOrder": "в обробці",
+      "id": 1
+    },
+    {
+      "userName": "Kris",
+      "userSecondName": "Lolhy",
+      "userCity": "Львів",
+      "userRegion": "Львівська область",
+      "userPhone": "0974015778",
+      "userEmail": "hrustyn99@gmail.com",
+      "userComment": "",
+      "totalPayment": 599,
+      "productOrder": [
+        {
+          "category": {
+            "nameEN": "accessories",
+            "nameUA": "аксессуары",
+            "id": 5
+          },
+          "nameEN": "shirt",
+          "nameUA": "Рубашка",
+          "description": "лот 10 шт, розмір S-XXL",
+          "season": "summer",
+          "brand": "MK",
+          "price": 599,
+          "value": "ед.",
+          "oldprice": null,
+          "selfcost": 40,
+          "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2Faccess.png?alt=media&token=48882055-5d33-4bf3-949e-1b312e738999",
+          "count": 1,
+          "id": 4
+        }
+      ],
+      "dateOreder": "2020-09-22T13:20:43.632Z",
+      "statusOrder": "в обробці",
+      "id": 2
+    },
+    {
+      "userName": "fthf",
+      "userSecondName": "bhjvg",
+      "userCity": "vhjv",
+      "userPhone": "vhmv",
+      "userComment": "",
+      "totalPayment": 1097,
+      "productOrder": [
+        {
+          "category": {
+            "nameEN": "children",
+            "nameUA": "дети",
+            "id": 4
+          },
+          "nameEN": "shirt",
+          "nameUA": "Рубашка",
+          "description": "лот 10 шт, розмір S-XXL",
+          "season": "весна-лето",
+          "brand": "Karl",
+          "price": 299,
+          "value": "ед.",
+          "oldprice": 200,
+          "selfcost": 19,
+          "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2F%D0%B4%D1%96%D1%82%D0%B8.jpeg?alt=media&token=767a344f-79f2-47dc-a623-56bb673ee35c",
+          "count": 3,
+          "id": 3
+        },
+        {
+          "category": {
+            "nameEN": "female",
+            "nameUA": "женщины",
+            "id": 2
+          },
+          "nameEN": "shoes",
+          "nameUA": "Туфли",
+          "description": "PETALO PUMP 120 mm",
+          "season": "все",
+          "brand": "Le silla",
+          "price": 200,
+          "value": "кг.",
+          "selfcost": 200,
+          "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2F7069705e-93f9-4384-87ef-818ae633f5cd.jpeg?alt=media&token=f4e57532-1aac-459d-b4d4-83cc8ce717f9",
+          "count": 1,
+          "id": 1
+        }
+      ],
+      "dateOreder": "2020-09-24T15:43:45.545Z",
+      "statusOrder": "в обробці",
+      "id": 3
+    },
+    {
+      "userName": "sdfsdf33",
+      "userSecondName": "fsfdsfd333",
+      "userCity": "dfsd223",
+      "userRegion": "Львівська область",
+      "userPhone": "0974015778q",
+      "userEmail": "hrustyn99@gmail.com",
+      "userComment": "",
+      "totalPayment": 1099,
+      "productOrder": [
+        {
+          "category": {
+            "nameEN": "female",
+            "nameUA": "женщины",
+            "id": 2
+          },
+          "nameEN": "shoes",
+          "nameUA": "Туфли",
+          "description": "PETALO PUMP 120 mm",
+          "season": "все",
+          "brand": "Le silla",
+          "price": 200,
+          "value": "кг.",
+          "selfcost": 200,
+          "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2F7069705e-93f9-4384-87ef-818ae633f5cd.jpeg?alt=media&token=f4e57532-1aac-459d-b4d4-83cc8ce717f9",
+          "count": 4,
+          "id": 1
+        },
+        {
+          "category": {
+            "nameEN": "children",
+            "nameUA": "дети",
+            "id": 4
+          },
+          "nameEN": "shirt",
+          "nameUA": "Рубашка",
+          "description": "лот 10 шт, розмір S-XXL",
+          "season": "весна-лето",
+          "brand": "Karl",
+          "price": 299,
+          "value": "ед.",
+          "oldprice": 200,
+          "selfcost": 19,
+          "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2F%D0%B4%D1%96%D1%82%D0%B8.jpeg?alt=media&token=767a344f-79f2-47dc-a623-56bb673ee35c",
+          "count": 1,
+          "id": 3
+        }
+      ],
+      "dateOreder": "2020-10-23T11:30:51.224Z",
+      "statusOrder": "в обробці",
+      "id": 4
+    },
+    {
+      "userName": "c",
+      "userComment": "",
+      "totalPayment": 599,
+      "productOrder": [
+        {
+          "category": {
+            "nameEN": "accessories",
+            "nameUA": "аксессуары",
+            "id": 5
+          },
+          "nameEN": "shirt",
+          "nameUA": "Рубашка",
+          "description": "лот 10 шт, розмір S-XXL",
+          "season": "summer",
+          "brand": "MK",
+          "price": 599,
+          "value": "ед.",
+          "oldprice": null,
+          "selfcost": 40,
+          "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2Faccess.png?alt=media&token=48882055-5d33-4bf3-949e-1b312e738999",
+          "count": 1,
+          "id": 4
+        }
+      ],
+      "dateOreder": "2020-10-29T20:22:07.722Z",
+      "statusOrder": "в обробці",
+      "id": 5
+    },
+    {
+      "userName": "івє",
+      "userSecondName": "рол",
+      "userCity": "иь",
+      "userPhone": "380930552641",
+      "userComment": "",
+      "totalPayment": 300,
+      "productOrder": [
+        {
+          "id": 7,
+          "category": {
+            "nameEN": "expected",
+            "nameUA": "ожидается",
+            "id": 6
+          },
+          "nameEN": "shirt",
+          "nameUA": "Рубашка",
+          "description": "лот 10 шт, розмір S-XXL",
+          "season": "summer",
+          "brand": "MK",
+          "price": 300,
+          "value": "кг.",
+          "oldprice": 488,
+          "selfcost": 25,
+          "image": "https://firebasestorage.googleapis.com/v0/b/stock-e9b72.appspot.com/o/images%2F%D0%B1%D0%BB%D1%83%D0%B7%D0%B0.jpeg?alt=media&token=0ffa2c1e-96bb-493d-8836-6d36f4533a07",
+          "count": 1
+        }
+      ],
+      "dateOreder": "2020-10-30T11:50:45.802Z",
+      "statusOrder": "в обробці",
+      "id": 6
+    }
+  ]
+}

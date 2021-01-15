@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.productCountWrapper {
+  display: flex;
+  margin-top: 8px;
+}
+
+.field {
+  font-size: 15px;
+  width: 25px;
+  height: 26px;
+  text-align: center;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  top: 5px;
+}
+
+.moreProduct {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bolder;
+  color: black;
+  position: relative;
+  top: -2.5px;
+  left: 0.6px;
+  font-size: 24px;
+}
+
+.lessProduct {
+  color: black;
+  position: relative;
+  top: -0.2px;
+  left: 0.1px;
+  font-size: 22px;
+}
+
+.minus,
+.plus {
+  // background-color: black;
+  // width: 16px;
+  // height: 16px;
+  // border: 1px solid;
+  // border-radius: 19px;
+  // margin-top: 6px;
+  cursor: pointer;
+  -ms-user-select: none;              // забрала копіювання
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.minus {
+  margin-right: 3px;
+}
+
+.plus {
+  margin-left: 3px;
+}

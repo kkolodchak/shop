@@ -1,0 +1,40 @@
+<h1 class="text-menu">{{ category | titlecase }}</h1>
+
+<div class="container">
+  <div class="row-4">
+
+    <div class="card card-box col-2 pl-0 pr-0" *ngFor="let prod of products">
+      <div class="productThumbnail productItemAnimate animated">
+        <a class="productImage preview preloaded" [style.backgroundImage]="'url('+prod.image+')'"
+          [routerLink]="[ '/menu/'+prod.category.nameEN, prod.id ]"></a>
+        <div class="productInfoWrapp prod">
+          <div class="productDescription normall">
+            <div>
+              <h4 class="text-h4"><a [routerLink]="[ '/menu/'+prod.category.nameEN, prod.id ]"
+                  class="decor">{{ prod.nameUA }}</a></h4>
+            </div>
+            <div>
+              <p class="text-p">{{ prod.brand }}</p>
+            </div>
+          </div>
+          <div class="productOrder">
+            <div class="productPrice  mb-3">
+              <span class="text-price mr-2">Цена ({{ prod.value }}):</span>
+              <span class="price-num">{{ prod.price}}</span> <span class="euro">€</span>
+              <span *ngIf="prod?.oldprice" class="oldPrise ml-2">{{ prod.oldprice }}€<div class="red-line"></div></span>
+            </div>
+            <!-- <div class="productCountWrapper">
+                    <span class="productCount lessProduct"></span>
+                    <input type="text" maxlength="3" [value]="1">
+                    <span class="productCount moreProduct"></span>
+            </div> -->
+            <!-- <app-counter [product]="prod"></app-counter> -->
+            <!-- <div class="button bttn add-to-cart-product mt-2">Заказать</div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

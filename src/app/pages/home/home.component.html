@@ -1,0 +1,119 @@
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <carousel [interval]="myInterval" [(activeSlide)]="activeSlideIndex">
+    <slide *ngFor="let slide of slides; let index=index">
+      <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+
+      <div class="carousel-caption">
+        <!-- <h4>Slide {{index}}</h4> -->
+        <p>{{slide.text}}</p>
+      </div>
+    </slide>
+  </carousel>
+  <br />
+</div>
+
+<div class="menu-categ">
+
+  <a [routerLink]="[ '/menu/female']" class="fem-bg" href="">
+    <div class="female">
+      <!-- <div class="box"> -->
+      <div class="logo-categ">
+        Женщины
+      </div>
+      <!-- </div> -->
+    </div>
+  </a>
+  <a [routerLink]="[ '/menu/male']" class="fem-bg" href="">
+    <div class="male">
+      <!-- <div class="box"> -->
+      <div class="logo-categ">
+        Мужчины
+      </div>
+      <!-- </div> -->
+    </div>
+  </a>
+  <a [routerLink]="[ '/menu/children']" class="fem-bg" href="">
+    <div class="children">
+      <!-- <div class="box"> -->
+      <div class="logo-categ">
+        Дети
+      </div>
+      <!-- </div> -->
+    </div>
+  </a>
+  <a [routerLink]="[ '/menu/accessories']" class="fem-bg" href="">
+    <div class="accessories">
+      <!-- <div class="box"> -->
+      <div class="logo-categ">
+        Аксессуары
+      </div>
+      <!-- </div> -->
+    </div>
+  </a>
+  <a [routerLink]="[ '/menu/expected']" class="fem-bg" href="">
+    <div class="expected">
+      <!-- <div class="box"> -->
+      <div class="logo-categ">
+        Ожидается
+      </div>
+      <!-- </div> -->
+    </div>
+  </a>
+
+</div>
+
+<div class="advantage">
+  <div class="first-section">
+    <img class="star" src="../../../assets/високое качество.png" alt="">
+    Високое качество
+  </div>
+  <div class="second-section">
+    <img class="star" src="../../../assets/IMG_8394.JPG" alt="">
+    Широкий ассортимент
+  </div>
+  <div class="third-section">
+    <img class="star money-img" src="../../../assets/money5.png" alt="">
+    Вигодние цени
+  </div>
+</div>
+
+<div class="description">
+  <div class="text-descr">
+    Компания «StockRoom» занимается оптовой продажей стоковой одежды лучших европейских брендов .Товары представлены на
+    нашем сайте это оптимальное соотношение высокого качества и выгодной цены.
+    <br>
+    Сотрудничая с нами, Вы экономите свое время и деньги, которые с радостью можете вложить в развитие своего бизнеса.
+    Мы делаем все чтобы наши клиенты были довольны,поэтому наши менеджеры всегда посоветуют и помогут Вам с выбором
+    товара!
+    <br>
+    Мы выработали идеальную систему сотрудничества с европейскими поставщиками, что позволяет нам делать постоянное
+    обновление товара.Мы подбираем только те товары ,которые буду пользоваться спросом среди покупателей.
+    <br>
+    <br>
+    Мы гарантируем Вам высокую скорость обработки заказов, а также их доставки благодаря транспортным компаниям, ваш
+    заказ будет доставлен в любую точку Украины в кратчайшие сроки:
+    <br>
+    -Нова пошта
+    <br>
+    Вы можете выбирать наиболее удобные способы оплаты:
+    <br>
+    - на карту Приват Банку
+    - оплата наложенным платежом с предоплатой
+    <br>
+    Мы рассчитываем на долгосрочные взаимовыгодные отношения, поэтому подход к каждому клиенту индивидуален.
+    <br>
+    <br>
+    Компанія «Stock Room» - надежный партнер для вашего бизнеса.
+  </div>
+</div>
+
+
+<!-- <p class="p_brands">Бренды с которими работаем</p>
+
+<carousel [itemsPerSlide]="itemsPerSlide " [singleSlideOffset]="singleSlideOffset" [interval]="false" [noWrap]="noWrap">
+  <slide *ngFor="let slide of slider; let index=index">
+    <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+    <div class="carousel-caption">
+    </div>
+  </slide>
+</carousel> -->
