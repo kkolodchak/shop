@@ -1,5 +1,10 @@
 # StockRoom
 
+http://localhost:4200/admin-login - link for entering on admin page, where 
+Email:stockroom.opt@gmail.com 
+and Password: stockroom2020. 
+Here you can add, edit info about goods on the site.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
 ## Development server
